@@ -9,6 +9,7 @@ body{
 
     background-image: url(menu_img/Star\ Game.jpg);
     background-size: cover;
+    background-position-x: center;
     overflow: hidden;
     
 }
@@ -30,6 +31,7 @@ body{
     width: 28%;
     margin-top: 2rem;
     margin-bottom: 1.25rem ;
+    min-width: min-content;
 }
 
 .btn-visualmente{
@@ -37,8 +39,9 @@ body{
     color: black;
     width: 100%;
     padding: .5rem 0;
+    margin-inline: .5rem;
     margin-bottom: .75rem ; 
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px #00000080;
     font-size: 1.25rem; 
     letter-spacing: .025em;
     border: 2px solid black;
@@ -46,11 +49,12 @@ body{
                 inset -3px -3px 0 (0, 0, 0, 0.5);
     cursor: pointer;
     
+    
 }
 .btn-visualmente:hover {
     background: cornsilk;
 }
 
-.btn-visualmente:focus {
+.btn-visualmente:active {
     color: rgba(193, 251, 255, 0.774);
 }
