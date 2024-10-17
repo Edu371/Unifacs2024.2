@@ -48,8 +48,6 @@ body{
     box-shadow: inset 3px 3px 0 (255, 255, 255, 0.5), 
                 inset -3px -3px 0 (0, 0, 0, 0.5);
     cursor: pointer;
-    
-    
 }
 .btn-visualmente:hover {
     background: cornsilk;
@@ -57,4 +55,10 @@ body{
 
 .btn-visualmente:active {
     color: rgba(193, 251, 255, 0.774);
+}
+
+.credits_dialog {
+    background: #ffbd59 ;
+    position: absolute;
+    top: 50%;
 }

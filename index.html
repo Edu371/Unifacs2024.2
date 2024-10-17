@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualmente</title>
     <link rel="stylesheet" href="style.css">
+    <script src="menu.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="menu">
             <button class="btn-visualmente">Começar</button>
             <button class="btn-visualmente">Opções</button>
-            <button class="btn-visualmente">Créditos</button>
+            <button class="btn-visualmente" onclick="show_credits()">Créditos</button>
         </div>
     </div>
-    
+    <dialog class="credits_dialog">
+        <h2>Membros</h2>
+        <p>
+            Edu Araújo Maciel<br>
+            Lucas Ribeiro de Souza Neves<br>
+            Marcos Felipe Teles da Hora<br>
+            Pedro Henrique Moura de Lima
+        </p>
+        <button class="dialog_button" onclick="close_credits()">X</button>
+    </dialog>
 </body>
 </html>
