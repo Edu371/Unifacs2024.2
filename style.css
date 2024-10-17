@@ -57,8 +57,14 @@ body{
     color: rgba(193, 251, 255, 0.774);
 }
 
-.credits_dialog {
+dialog {
     background: #ffbd59 ;
     position: absolute;
     top: 50%;
+}
+
+dialog button {
+    aspect-ratio: 1;
+    position: absolute;
+    right: 10px
 }
