@@ -58,9 +58,17 @@ body{
 }
 
 dialog {
-    background: #ffbd59 ;
-    position: absolute;
-    top: 50%;
+    padding: 0;
+}
+
+dialog div {
+    background: #ffbd59;
+    padding: 1rem 1rem;
+}
+
+dialog::backdrop {
+    background: rgba(0,0,0,.5);
+    backdrop-filter: blur(2px);
 }
 
 dialog button {
