@@ -1,13 +1,16 @@
 @font-face {
     font-family: Pixel;
-    src: url(menu_img/PressStart2P.ttf);
+    src: url(assets/PressStart2P.ttf);
+}
+:root {
+    --font: 'Pixel'
 }
 *{
-    font-family: Pixel;
+    font-family: var(--font);
 }
 body{
 
-    background-image: url(menu_img/Star\ Game.jpg);
+    background-image: url(assets/background.png);
     background-size: cover;
     background-position-x: center;
     overflow: hidden;
@@ -71,7 +74,7 @@ dialog::backdrop {
     backdrop-filter: blur(2px);
 }
 
-dialog button {
+.dialog_button {
     aspect-ratio: 1;
     position: absolute;
     right: 10px
