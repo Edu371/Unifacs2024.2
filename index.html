@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualmente</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <script src="base.js"></script>
     <script src="menu.js"></script>
     <link rel="icon" href="assets/favicon.png">
 </head>
 <body>
     <div class="container">
         <div class="menu">
-            <button class="btn-visualmente">Começar</button>
+            <button class="btn-visualmente" onclick="location.href='jogo.html'">Começar</button>
             <button class="btn-visualmente" onclick="show_options()">Opções</button>
             <button class="btn-visualmente" onclick="show_credits()">Créditos</button>
         </div>
@@ -20,7 +22,10 @@
         <div>
         <button class="dialog_button" onclick="close_options()">X</button>
         <h2>Opções</h2>
-        <button onclick="change_font()">Mudar Fonte</button>
+        <a>Fonte:</a>
+        <button onclick="change_font(-1)"><</button>
+        <a id="font_name"><script>document.write(fonts[current_font][0])</script></a>
+        <button onclick="change_font(1)">></button>
         </div>
     </dialog>
     <dialog class="credits_dialog">

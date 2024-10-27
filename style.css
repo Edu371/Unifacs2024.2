@@ -3,18 +3,12 @@
     src: url(assets/PressStart2P.ttf);
 }
 :root {
-    --font: 'Pixel'
+    --font: 'Pixel';
+    --font-weight: 'normal';
 }
 *{
     font-family: var(--font);
-}
-body{
-
-    background-image: url(assets/background.png);
-    background-size: cover;
-    background-position-x: center;
-    overflow: hidden;
-    
+    font-weight: var(--font-weight);
 }
 
 .container{
@@ -62,11 +56,19 @@ body{
 
 dialog {
     padding: 0;
+    width: 28%;
+    min-width: min-content;
 }
 
 dialog div {
     background: #ffbd59;
     padding: 1rem 1rem;
+    white-space: nowrap;
+}
+
+dialog h2 {
+    text-align: center;
+    padding-bottom: 1rem;
 }
 
 dialog::backdrop {
