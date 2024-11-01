@@ -1,5 +1,25 @@
 body {
     background-color: #7dabff;
+    display: flex;
+    flex-direction: column;
+}
+
+svg {
+    padding: 0.5rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.header button {
+    position:absolute
+}
+
+.header h2 {
+    text-align: center;
+    width: 100%;
 }
 
 .respostas {
@@ -10,9 +30,13 @@ body {
     flex-wrap: nowrap;
 }
 
-.btn-visualmente {
+.respostas button {
     max-height: 35vh;
     aspect-ratio: 1;
+}
+
+.respostas button img {
+    max-height: 100%;
 }
 
 .images-container {
