@@ -32,9 +32,3 @@ function show_credits() {
 function close_credits() {
     credits_dialog.close();
 }
-
-function closeDialog(event) {
-    if (event.target.nodeName === "DIALOG") {
-        event.target.close();
-    }
-}

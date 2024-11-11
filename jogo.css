@@ -4,6 +4,10 @@ body {
     flex-direction: column;
 }
 
+:root {
+    --msg-color: red;
+}
+
 svg {
     padding: 0.5rem;
 }
@@ -60,4 +64,16 @@ svg {
 
 .quatro_imagem img {
     height: 25vh;
+}
+
+.dialog_button {
+    aspect-ratio: auto;
+    position: inherit;
+    height: 50px;
+    background: #e09d38;
+    margin-inline: 0;
+}
+
+dialog h2 {
+    color: var(--msg-color);
 }
