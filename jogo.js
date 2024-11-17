@@ -67,7 +67,7 @@ function modo3() {
 function modo4() {
     input_tipo = 0;
     resposta_tipo = 1;
-    descricao = "Responda qual é o mesmo";
+    descricao = "Qual imagem é o mesmo ?";
 
     cat = random_category();
     item = random_item(cat);
@@ -88,7 +88,7 @@ function modo4() {
 function modo5() {
     input_tipo = 0;
     resposta_tipo = 1;
-    descricao = "Responda qual imagem é da mesma Categoria";
+    descricao = "Qual imagem é da mesma Categoria ?";
 
     cat = random_category();
     item = random_item(cat);
@@ -115,7 +115,7 @@ function modo5() {
 function modo6() {
     input_tipo = 1;
     resposta_tipo = 1;
-    descricao = "Responda qual imagem é da mesma Categoria";
+    descricao = "Qual imagem é da mesma Categoria ?";
 
     cat = random_category();
     item = random_item(cat);
@@ -147,21 +147,34 @@ function selecionar(n) {
     const { style } = document.documentElement;
     showMensagem();
     mensagem = document.getElementsByClassName("mensagem")[0];
+    placar = document.getElementsByClassName("placar")[0];
     if (n == correto) {
         mensagem.innerHTML = "acertou";
         style.setProperty('--msg-color', "green")
+        acertos += 1;
+        sessionStorage.setItem("acertos", acertos);
     } else {
         mensagem.innerHTML = "errado";
         style.setProperty('--msg-color', "red")
+        erros += 1;
+        sessionStorage.setItem("erros", erros);
     }
+    placar.innerHTML = "Acertos: " + acertos + "<br>Erros: " + erros;
 }
 
 function showMensagem() {
     dialog.showModal();
 }
 
-function closeMensagem(_) {
-    location.reload();
+function closeMensagem(event) {
+    if (typeof event !== "undefined") {
+         if (event.target.nodeName === "DIALOG") {
+            // event.target.close();
+            location.reload();
+         }
+    } else {
+        location.reload();
+    }
 }
 
 var imagesContainer;
@@ -171,7 +184,7 @@ var dialog
 document.addEventListener("DOMContentLoaded", function(e) {
 
     dialog = document.getElementsByClassName("dialog")[0];
-    dialog.addEventListener("click", closeDialog);
+    dialog.addEventListener("click", closeMensagem);
 
     document.getElementById("descricao").innerHTML = descricao;
     

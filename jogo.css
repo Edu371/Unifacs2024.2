@@ -1,5 +1,9 @@
 body {
-    background-color: #7dabff;
+    /* background-color: #7dabff;*/
+    background-image: url(assets/background2.png);
+    background-size: cover;
+    background-position-x: center;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }

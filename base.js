@@ -7,6 +7,15 @@ if (sessionStorage.getItem("current_font") == null) {
 } else {
     current_font = Number(sessionStorage.getItem("current_font"));
 }
+var acertos = 0;
+var erros = 0;
+if (sessionStorage.getItem("acertos") == null) {
+    sessionStorage.setItem("acertos", acertos);
+    sessionStorage.setItem("erros", erros);
+} else {
+    acertos = Number(sessionStorage.getItem("acertos"));
+    erros = Number(sessionStorage.getItem("erros"));
+}
 
 style.setProperty('--font', fonts[current_font][0])
 style.setProperty('--font-weight', fonts[current_font][1])

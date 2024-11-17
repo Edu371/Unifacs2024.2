@@ -33,10 +33,12 @@ function random_array3(a, exclude) {
 }
 
 const db = {
-    "animal": {"cachorro":5, "galinha":5, "gato":5, "leão":5, "pássaro":5},
-    "comida": {"banana":6, "carne":5, "maçã":8, "manga":5, "ovo":5},
-    "eletrodoméstico": {"fogão":5, "geladeira":7, "lavadora":5,"liquidificador":5, "microondas":5},
-    "veículo": {"avião": 4, "barco": 5, "caminhão":5,"carro":7, "moto":6}
+    "animal": {"cachorro":14, "cavalo":10, "elefante":9, "galinha":10, "gato":20, "leão":6, "pássaro":10, "sapo":9, "urso":6},
+    "comida": {"banana":6, "batata":10, "biscoito":17, "bolo":10, "carne":13, "cebola":15, "feijão":9, "laranja":12, "maçã":10, "macarrão":11, "manga":6, "melancia":9, "ovo":8, "tomate":8, "uva":11},
+    "eletrodoméstico": {"ar-condicionado":5, "aspirador":7, "fogão":8, "geladeira":10, "lavadora":14,"liquidificador":9, "microondas":10, "televisão":9, "torradeira":8, "ventilador":7},
+    "instrumento": {"bateria":7, "piano":8, "sanfona":8, "trompete":8, "violão":6},
+    "móvel": {"cama":7, "estante":6, "guarda-roupas":7, "mesa":10, "sofá":10},
+    "veículo": {"avião": 13, "barco": 5, "caminhão":5, "carro":13, "helicóptero":12, "moto":6}
 }
 categorias = Object.keys(db)
 items = []
