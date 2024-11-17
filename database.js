@@ -33,7 +33,7 @@ function random_array3(a, exclude) {
 }
 
 const db = {
-    "animal": {"cachorro":14, "cavalo":10, "elefante":9, "galinha":10, "gato":20, "leão":6, "pássaro":10, "sapo":9, "urso":6},
+    "animal": {"cachorro":14, "cavalo":10, "elefante":9, "galinha":9, "gato":20, "leão":6, "pássaro":10, "sapo":9, "urso":6},
     "comida": {"banana":6, "batata":10, "biscoito":17, "bolo":10, "carne":13, "cebola":15, "feijão":9, "laranja":12, "maçã":10, "macarrão":11, "manga":6, "melancia":9, "ovo":8, "tomate":8, "uva":11},
     "eletrodoméstico": {"ar-condicionado":5, "aspirador":7, "fogão":8, "geladeira":10, "lavadora":14,"liquidificador":9, "microondas":10, "televisão":9, "torradeira":8, "ventilador":7},
     "instrumento": {"bateria":7, "piano":8, "sanfona":8, "trompete":8, "violão":6},

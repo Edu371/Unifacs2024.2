@@ -22,7 +22,8 @@ svg {
 }
 
 .header button {
-    position:absolute
+    position:absolute;
+    padding: 0px;
 }
 
 .header h2 {
@@ -39,7 +40,6 @@ svg {
 }
 
 .respostas button {
-    max-height: 35vh;
     aspect-ratio: 1;
 }
 
@@ -49,10 +49,6 @@ svg {
 
 .images-container {
     margin-block: 2rem;
-}
-
-.uma_imagem {
-    height: 50vh;
 }
 
 .uma_imagem img {
@@ -80,4 +76,72 @@ svg {
 
 dialog h2 {
     color: var(--msg-color);
+}
+
+@media screen and (orientation:portrait) {
+    .header button svg {
+        width:10vw;
+        height:10vw;
+    }
+    .header button svg image {
+        width:10vw;
+        height:10vw;
+    }
+
+    .header h2 {
+        text-align: center;
+        padding-left: 10vw;
+    }
+
+    .images-container {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .uma_imagem img {
+        height: 40vh;
+    }
+
+    .quatro_imagem {
+        display: flex;
+        grid-gap: 1rem;
+        width:fit-content;
+        margin-block: 1rem;
+    }
+
+    .quatro_imagem img {
+        height: 20vh;
+    }
+
+    .respostas {
+        height: 40vh;
+        width: 95vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .respostas button {
+        width: 45%;
+        aspect-ratio: 1;
+        font-size: larger;
+        text-shadow: none;
+    }
+
+    .respostas button img {
+        max-width: 100%;
+    }
+
+    dialog h2 {
+        font-size: 2em;
+    }
+
+    dialog p {
+        font-size: 1.25em;
+    }
+
+    .dialog_button {
+        height: auto;
+    }
+    
 }

@@ -149,12 +149,12 @@ function selecionar(n) {
     mensagem = document.getElementsByClassName("mensagem")[0];
     placar = document.getElementsByClassName("placar")[0];
     if (n == correto) {
-        mensagem.innerHTML = "acertou";
+        mensagem.innerHTML = "Acertou";
         style.setProperty('--msg-color', "green")
         acertos += 1;
         sessionStorage.setItem("acertos", acertos);
     } else {
-        mensagem.innerHTML = "errado";
+        mensagem.innerHTML = "Errado";
         style.setProperty('--msg-color', "red")
         erros += 1;
         sessionStorage.setItem("erros", erros);

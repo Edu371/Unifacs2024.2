@@ -1,6 +1,23 @@
 body{
-    background-image: url(assets/background.png);
+    background-image: url(assets/background2.png);
     background-size: cover;
     background-position-x: center;
     overflow: hidden;
+}
+
+.titulo {
+    position: absolute;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.titulo img {
+    width:62.5%;
+}
+
+@media screen and (orientation:portrait) {
+    .titulo img {
+        width: 100%;
+    }
 }
