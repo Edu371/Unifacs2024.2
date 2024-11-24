@@ -1,6 +1,7 @@
 const { style } = document.documentElement;
 
-const fonts = [["Pixel", "normal"], ["Comic Sans MS", "bold"]];
+const fonts = [["Pixel", "normal"], ["Comic Sans MS", "bold"], ["Arial", "bold"],
+               ["Verdana", "bold"], ["Courier New", "bold"]];
 var current_font = 1;
 if (sessionStorage.getItem("current_font") == null) {
     sessionStorage.setItem("current_font", current_font);
