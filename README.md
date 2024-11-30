@@ -8,7 +8,6 @@ Unifacs Campus Santa Monica
 Membros da Equipe:
 ```
 Edu Araújo Maciel
-João Victor Souza Martins
 Lucas Neves
 Marcos Felipe
 Pedro Moura
