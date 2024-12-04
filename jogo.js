@@ -1,3 +1,5 @@
+var victory = new Audio('assets/level-passed.mp3');
+var fail = new Audio('assets/fail.mp3');
 function teste() {
     correto = 0;
     input_tipo = 0;
@@ -67,7 +69,7 @@ function modo3() {
 function modo4() {
     input_tipo = 0;
     resposta_tipo = 1;
-    descricao = "Qual imagem é o mesmo ?";
+    descricao = "Qual imagem é o mesmo?";
 
     cat = random_category();
     item = random_item(cat);
@@ -88,7 +90,7 @@ function modo4() {
 function modo5() {
     input_tipo = 0;
     resposta_tipo = 1;
-    descricao = "Qual imagem é da mesma Categoria ?";
+    descricao = "Qual imagem é da mesma Categoria?";
 
     cat = random_category();
     item = random_item(cat);
@@ -115,7 +117,7 @@ function modo5() {
 function modo6() {
     input_tipo = 1;
     resposta_tipo = 1;
-    descricao = "Qual imagem é da mesma Categoria ?";
+    descricao = "Qual imagem é da mesma Categoria?";
 
     cat = random_category();
     item = random_item(cat);
@@ -153,11 +155,13 @@ function selecionar(n) {
         style.setProperty('--msg-color', "green")
         acertos += 1;
         sessionStorage.setItem("acertos", acertos);
+        if (som == 1) {victory.play();}
     } else {
         mensagem.innerHTML = "Errado";
         style.setProperty('--msg-color', "red")
         erros += 1;
         sessionStorage.setItem("erros", erros);
+        if (som == 1) {fail.play();}
     }
     placar.innerHTML = "Acertos: " + acertos + "<br>Erros: " + erros;
 }

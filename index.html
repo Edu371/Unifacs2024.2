@@ -23,12 +23,16 @@
     </div>
     <dialog class="options_dialog">
         <div>
-        <button class="dialog_button" onclick="close_options()">X</button>
-        <h2>Opções</h2>
-        <a>Fonte:</a>
-        <button onclick="change_font(-1)"><</button>
-        <a id="font_name"><script>document.write(fonts[current_font][0])</script></a>
-        <button onclick="change_font(1)">></button>
+            <button class="dialog_button" onclick="close_options()">X</button>
+            <h2>Opções</h2>
+            <a>Fonte:</a>
+            <button onclick="change_font(-1)"><</button>
+            <a id="font_name"><script>document.write(fonts[current_font][0])</script></a>
+            <button onclick="change_font(1)">></button>
+            <br>
+            <br>
+            <a>Som:</a>
+            <button id="som_button" style="width:25px; height:25px" onclick="change_som()"><script>document.write(getSomText())</script></button>
         </div>
     </dialog>
     <dialog class="credits_dialog">

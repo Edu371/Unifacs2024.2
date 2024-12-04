@@ -32,3 +32,9 @@ function show_credits() {
 function close_credits() {
     credits_dialog.close();
 }
+
+function change_som() {
+    som = som ^ 1;
+    document.getElementById("som_button").innerHTML = getSomText();
+    sessionStorage.setItem("som", som);
+}

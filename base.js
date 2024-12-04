@@ -17,6 +17,12 @@ if (sessionStorage.getItem("acertos") == null) {
     acertos = Number(sessionStorage.getItem("acertos"));
     erros = Number(sessionStorage.getItem("erros"));
 }
+var som = 1;
+if (sessionStorage.getItem("som") == null) {
+    sessionStorage.setItem("som", som);
+} else {
+    som = Number(sessionStorage.getItem("som"));
+}
 
 style.setProperty('--font', fonts[current_font][0])
 style.setProperty('--font-weight', fonts[current_font][1])
@@ -24,5 +30,14 @@ style.setProperty('--font-weight', fonts[current_font][1])
 function closeDialog(event) {
     if (event.target.nodeName === "DIALOG") {
         event.target.close();
+    }
+}
+
+function getSomText() {
+    if (som == 1) {
+        return "✔"
+    }
+    else {
+        return " "
     }
 }
